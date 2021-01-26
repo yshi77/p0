@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 I =  io.imread('gigi.jpg')
+##print(type(I[0,0,0]))
 I[I<50] = 50
 I = I - 50
 I = img_as_float32(I)
